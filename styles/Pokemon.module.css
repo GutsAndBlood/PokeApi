@@ -1,0 +1,17 @@
+.pokemonList{
+    margin-top: 40px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.pokemonList h2{
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.pokemonList img{
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}

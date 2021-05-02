@@ -1,0 +1,24 @@
+.footerMain{
+    margin-top:100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    z-index: -1;
+
+}
+
+
+.footerMain img {
+    margin: auto;
+    padding-top: 40px;
+    height: 100px;
+}
+
+.footerMain p {
+    margin-top: 0px 
+}
