@@ -6,4 +6,72 @@
 .error h1{
   font-size: 50px;
 }
+
+
+.error button{
+  position: relative;
+  height: 35px;
+  background-color: #d31717;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  border:1px solid #eaecef;
+  padding: 5px 16px; 
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.error button:hover{
+  background-color:#860000;
+}
+
+
+@media (max-width: 414px) {
+  .error h1{
+    font-size: 40px;
+    margin-left: 60px;
+    width: 360px;
+  }
+ 
+  .error button{
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .error h1{
+    font-size: 40px;
+  }
   
+  
+  .error button{
+    margin-left: 150px;
+  } 
+}
+
+
+
+@media (max-width: 360px) {
+  .error h1{
+    font-size: 40px;
+    margin-left: 60px;
+    width: 360px;
+  }
+  
+  
+  .error button{
+    margin-left: 120px;
+  }
+}
+
+
+@media (max-width: 280px) {
+  .pokemonContainer {
+      gap: 2em;
+      padding-left: 40px;   
+  }
+}

@@ -1,26 +1,34 @@
 import styles from '@/styles/Header.module.css'
 import Link from 'next/link'
+import Router from 'next/router'
+import Image from 'next/image'
 
 export default function Header() {
+
+    
+    const profile = () => {
+        Router.reload(window.open('https://gutsandblood.github.io/react-portfolio/', "_blank"))
+    }
+
+    const reload = () => {
+        Router.reload(window.location.pathname)
+    }
+
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Link href='/'>
-                    <a>PokeApi</a>
-                </Link>
+                <Image
+                src='/logo.png'
+                alt='pokemon logo'
+                width={128}
+                height={72}
+                onClick={reload}/>
             </div>    
 
             <nav>
                 <ul>
                     <li>
-                        <Link href='/abilities'>
-                            <a>Abilities</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/abilities'>
-                            <a>Abilities</a>
-                        </Link>
+                        <a href='/' onClick={profile}>About Me</a>
                     </li>
                 </ul>
             </nav>

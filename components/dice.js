@@ -11,8 +11,7 @@ export default function Dice() {
     const reload = () => {
         Router.reload(window.location.pathname)
     }
-
-
+    
     return (
 
         <motion.div 

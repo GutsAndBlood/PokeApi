@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background:url('/banner1.jpg') 50% 10%;
+    background-size: 800px;
     color: #333;
     height: 60px;
     padding: 0 30px;
@@ -10,12 +11,13 @@
   }
   
   .header a {
-    color: #333;
+    color: rgb(255, 255, 255);
     margin-right: 20px;
+    font-size: 25px;
   }
   
   .header a:hover {
-    color: #000;
+    color: rgb(187, 39, 39);
   }
   .header ul {
     display: flex;
@@ -25,13 +27,9 @@
   }
   
   .logo {
-    color: red;
     font-size: 20px;
     text-transform: uppercase;
-  }
-  
-  .logo a {
-    color: red;
+    cursor: pointer;
   }
   
   @media (max-width: 450px) {
@@ -48,6 +46,7 @@
   
     .header a {
       margin-right: 0;
+      font-size: 30px;
     }
   
     .logo {
